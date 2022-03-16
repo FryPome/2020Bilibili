@@ -1,0 +1,93 @@
+*{
+    font: 18px/1.5 '微软雅黑', Verdana, Helvetica, Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -box-sizing: border-box;
+    padding:0;
+    margin:0;
+    list-style:none;
+    box-sizing: border-box;
+}
+
+body,html{
+    height:100%;
+    overflow:hidden;
+}
+
+body{
+    background:url(images/main_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.message{
+    position: absolute;
+    left: 522px;
+    bottom: 410px;
+    font-weight: bold;
+    color: #1d0808;
+    font-size: 32px
+}
+a.img{
+    text-decoration:none;
+    cursor:pointer;
+}
+.echart{
+    position: absolute;
+    top: 0px;
+    left: 680px;
+    width: 1000px;
+    height: 1000px;
+    padding: 40px;
+    border-radius: 4px;
+    box-sizing: border-box;
+/*    background-color: #ffffff;*/
+}
+.copyright{
+    font-size:14px;
+    color:rgba(255,255,255,0.85);
+    display:block;
+    position:absolute;
+    bottom:15px;
+    right:15px;
+}
+
+table
+{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    left: 350px;
+    bottom: 70px;
+}
+ 
+.Modbus
+{
+    border:solid #ccc; 
+    border-width:1px 0px 0px 1px;
+	border-radius: 10px;                                /*设置表格外边框圆角*/
+}
+ 
+.Modbus td
+{
+	border-right:solid #ccc 1px;                        /*设置表格单元格外边框，只设置右下边框*/
+    border-bottom: solid #ccc 1px;
+    border-width:0px 1px 1px 0px;
+	padding: 3px;                                      /*设置单元格内边距，单元格内容显得不拥挤*/
+	text-align: center;                                 /*单元格内容居中*/
+}
+/*鼠标移动至单元格，单元格高亮显示*/
+.Modbus tr:hover
+{
+	background: #dbc5c5;
+}
+
+.item1
+{
+    /* background-color: #dbc5c5;                          设置表头背景色 */
+    width: 30%;
+    font-weight: bold;
+}
+.item2
+{
+    width: 70%;
+}
+
