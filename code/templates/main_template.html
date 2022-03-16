@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Pragma" content="no-cache"> 
+		<meta http-equiv="Cache-Control" content="no-cache"> 
+		<meta http-equiv="Expires" content="0"> 
+		<title>B站爬虫</title> 
+		<link href="/static/main_template.css" type="text/css" rel="stylesheet"> 
+		<script type="text/javascript" src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	</head> 
+
+	<body> 
+		<a class="img" target="_blank" href="/static/images/result/{{detail['bid']}}.png">
+			<img src="/static/images/result/{{detail['bid']}}.png" alt="{{detail['bid']}}" width=440px>
+		</a>
+		<div class="echart" id="show"></div>
+		<div class="copyright"> @by zzx</a></div>
+
+		<div class="message">【视频详情】</div>
+
+		<table class="Modbus">
+			<tr>
+				<td class="item1">视频名称</td>
+				<td class="item2"><a href="{{detail['url']}}">{{detail['title']}}</a></td>
+			</tr>
+			<tr>
+				<td class="item1">up主</td>
+				<td class="item2">{{detail['author']}}</td>
+			</tr>
+			<tr>
+				<td class="item1">播放量</td>
+				<td class="item2">{{detail['watched']}}</td>
+			</tr>
+			<tr>
+				<td class="item1">弹幕数量</td>
+				<td class="item2">{{detail['bullet_comments']}}</td>
+			</tr>
+			<tr>
+				<td class="item1">点赞</td>
+				<td class="item2">{{detail['liked']}}</td>
+			</tr>
+			<tr>
+				<td class="item1">投币</td>
+				<td class="item2">{{detail['coin']}}</td>
+			</tr>
+			<tr>
+				<td class="item1">收藏</td>
+				<td class="item2">{{detail['collected']}}</td>
+			</tr>
+			<tr>
+				<td class="item1">分享</td>
+				<td class="item2">{{detail['shared']}}</td>
+			</tr>
+			<!-- <tr>
+				<td class="item1">发布日期</td>
+				<td class="item2">{{detail['date']}}</td>
+			</tr> -->
+			</thead>
+		</table>
+	</body>
+</html>
